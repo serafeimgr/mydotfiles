@@ -71,7 +71,9 @@ ZSH_THEME="blinks"
 plugins=(git
          zsh-autosuggestions
 	 zsh-syntax-highlighting
-	 zsh-completions)
+	 zsh-completions
+	 navi
+	 fzf)
 
 source $ZSH/oh-my-zsh.sh
 
