@@ -1,0 +1,5 @@
+[user]
+	email = serafeimgr@gmail.com
+	name = serafeimgr
+[include]
+  path = .gitalias.txt
