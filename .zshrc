@@ -70,8 +70,8 @@ ZSH_THEME="blinks"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
          zsh-autosuggestions
-	       zsh-syntax-highlighting
-	       zsh-completions)
+	 zsh-syntax-highlighting
+	 zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
