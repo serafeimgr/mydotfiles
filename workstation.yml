@@ -5,7 +5,7 @@
         - awscli
         - j2cli
         - ansible-lint
-        - pylint
+        - yapf
         - tldr
   pre_tasks:
     - name: Install dependencies
@@ -53,3 +53,4 @@
             - mads-hartmann.bash-ide-vscode
 
     - role: geerlingguy.pip
+      pip_executable: pip3
