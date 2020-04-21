@@ -1,5 +1,4 @@
 - hosts: localhost
-  become: true
   vars:
     pip_install_packages:
       - name: 
@@ -7,8 +6,10 @@
         - j2cli
         - ansible-lint
         - pylint
+        - tldr
   pre_tasks:
     - name: Install dependencies
+      become: true
       package:
         name: 
         - git
@@ -23,7 +24,7 @@
 
     - role: gantsign.antigen
       users:
-        - username: $USER
+        - username: '{{ ansible_env.USER }}'
           antigen_libraries:
             - name: oh-my-zsh
           antigen_theme:
@@ -41,7 +42,7 @@
 
     - role: gantsign.visual-studio-code
       users:
-        - username: $USER
+        - username: '{{ ansible_env.USER }}'
           visual_studio_code_extensions:
             - alphabotsec.vscode-eclipse-keybindings
             - vscoss.vscode-ansible
