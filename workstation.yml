@@ -6,6 +6,7 @@
         - j2cli
         - ansible-lint
         - yapf
+        - pycodestyle 
         - tldr
   pre_tasks:
     - name: Install dependencies
