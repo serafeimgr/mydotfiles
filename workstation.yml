@@ -45,7 +45,7 @@
       users:
         - username: '{{ ansible_env.USER }}'
           visual_studio_code_extensions:
-            - alphabotsec.vscode-eclipse-keybindings
+            - vscodevim.vim
             - vscoss.vscode-ansible
             - ms-python.python
             - wholroyd.jinja
