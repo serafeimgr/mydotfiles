@@ -20,3 +20,4 @@ set scrolloff=8
 set cmdheight=2                                                                                 
 set colorcolumn=80                                                              
 set background=dark                                                                           
+set clipboard=unnamed
