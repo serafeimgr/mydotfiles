@@ -105,3 +105,4 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 [ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
 bindkey -v
 export KEYTIMEOUT=1
+if [ "$TMUX" = "" ]; then tmux; fi
