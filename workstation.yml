@@ -8,6 +8,8 @@
         - yapf
         - pycodestyle 
         - tldr
+        - ansible
+        - tmuxp
   pre_tasks:
     - name: Install dependencies
       become: true
@@ -17,6 +19,8 @@
         - shellcheck
         - zsh
         - fzf
+        - jq
+        - htop
         state: present
 
   roles:
@@ -45,13 +49,21 @@
       users:
         - username: '{{ ansible_env.USER }}'
           visual_studio_code_extensions:
-            - vscodevim.vim
-            - vscoss.vscode-ansible
+            - Cardinal90.multi-cursor-case-preserve
+            - eamodio.gitlens
+            - GitHub.github-vscode-theme
+            - hashicorp.terraform
+            - ms-azuretools.vscode-docker
             - ms-python.python
-            - wholroyd.jinja
+            - ms-python.vscode-pylance
+            - ms-toolsai.jupyter
+            - ms-toolsai.jupyter-keymap
+            - ms-toolsai.jupyter-renderers
+            - redhat.vscode-commons
+            - redhat.vscode-yaml
+            - samuelcolvin.jinjahtml
             - timonwong.shellcheck
-            - mauve.terraform
-            - mads-hartmann.bash-ide-vscode
+            - vscodevim.vim
 
     - role: geerlingguy.pip
       pip_executable: pip3
