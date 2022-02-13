@@ -4,6 +4,7 @@
     "editor.lineNumbers": "on",
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
+    "editor.lineNumbers": "relative",
     "vim.useSystemClipboard": true,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
