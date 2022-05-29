@@ -27,31 +27,14 @@
     - role: geerlingguy.docker
       docker_install_compose: true
 
-    - role: gantsign.antigen
-      users:
-        - username: '{{ ansible_env.USER }}'
-          antigen_libraries:
-            - name: oh-my-zsh
-          antigen_theme:
-            name: blinks
-          antigen_bundles:
-            - name: git
-            - name: pip
-            - name: command-not-found
-            - name: zsh-syntax-highlighting
-              url: zsh-users/zsh-syntax-highlighting
-            - name: zsh-autosuggestions
-              url: zsh-users/zsh-autosuggestions
-            - name: zsh-completions
-              url: zsh-users/zsh-completions
-
     - role: gantsign.visual-studio-code
       users:
         - username: '{{ ansible_env.USER }}'
           visual_studio_code_extensions:
             - Cardinal90.multi-cursor-case-preserve
+            - dracula-theme.theme-dracula
+            - Tim-Koehler.helm-intellisense
             - eamodio.gitlens
-            - GitHub.github-vscode-theme
             - hashicorp.terraform
             - ms-azuretools.vscode-docker
             - ms-python.python
